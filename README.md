@@ -5,5 +5,6 @@ Here are the requirements:
 - The board should be printed out every time a player makes a move
 - You should be able to accept input of the player position and then place a symbol on the board
 - If a player connects 3, the game should stop and declare the player the winner
-- The layout of the board corresponds to the numeric keypad in a keyboard
+- The layout of the board corresponds to the numeric keypad in a keyboard:
+  [[https://github.com/MsFalilat/Tic-Tac-Toe-Python/blob/master/board.png|alt=board]]
   
