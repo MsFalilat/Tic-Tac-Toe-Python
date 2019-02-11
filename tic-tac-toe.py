@@ -52,13 +52,13 @@ def ticTacToe():
     keep prompting user for a choice until a valid input is entered.
     """
     while True:
-        if (choice == "X" or choice == "O"):
+        if (choice.upper() == "X" or choice.upper() == "O"):
             break
         else:
             choice = input("Player 1, Choose X or O: ")
             continue
 
-    orig_choice = copy(choice) #stores a copy of Player 1's choice of X or O
+    orig_choice = copy(choice.upper()) #stores a copy of Player 1's choice of X or O
     turns = 1  #Number of turns starting from turn 1
 
     """
@@ -67,7 +67,7 @@ def ticTacToe():
     execute.
     """
     while turns < 10:
-        pos = input(f"This turn is for {choice}. Choose your position (1-9): ") #stores the position player picks to play to
+        pos = input(f"This turn is for {choice.upper()}. Choose your position (1-9): ") #stores the position player picks to play to
 
         """
         if the position the player entered is not between 1 and 9, let them know
@@ -78,7 +78,7 @@ def ticTacToe():
             continue
         else: #if the position is between 1 and 9
             if board[pos] == ' ': #if the position on the board if empty
-                board[pos] = choice #fill that position on the board with the player's choice
+                board[pos] = choice.upper() #fill that position on the board with the player's choice
             else: #otherwise notify player that the position is filled and prompt them to choose an valid position
                 print("That position is already filled. Pick a valid empty position.")
                 continue
@@ -86,7 +86,7 @@ def ticTacToe():
         printBoard(board) #print the current board with the player's choice filled in
 
         #if the current player is "X" change it to the next player, "O". And vice versa.
-        if choice == "X":
+        if choice.upper() == "X":
             choice = "O"
         else:
             choice = "X"
@@ -150,6 +150,6 @@ def ticTacToe():
                 continue
     replay() #calls the replay function
 
-
+#calling the tic tac toe function, which begins the game
 ticTacToe()
 
