@@ -1,13 +1,13 @@
 from copy import copy
 
 def printBoard(board):
-    print('  |   |')
-    print(board['7'] + ' | ' + board['8'] + ' |' + board['9'])
-    print('--+---+--')
-    print(board['4'] + ' | ' + board['5'] + ' |' + board['6'])
-    print('--+---+--')
-    print(board['1'] + ' | ' + board['2'] + ' |' + board['3'])
-    print('  |   |')
+    print('   |   |')
+    print(' ' + board['7'] + ' | ' + board['8'] + ' | ' + board['9'])
+    print('---+---+---')
+    print(' ' + board['4'] + ' | ' + board['5'] + ' | ' + board['6'])
+    print('---+---+---')
+    print(' ' + board['1'] + ' | ' + board['2'] + ' | ' + board['3'])
+    print('   |   |')
     
 print("Welcome to Tic Tac Toe!\n")
 
@@ -24,7 +24,7 @@ printBoard(board)
 print()
 
 print("Player 1 will go first.\n")
-choice = '' #string var storing each players choice throughout the game
+choice = '' #string variable storing each players choice throughout the game
 
 """
 If Player 1 enters anything besides an "X" or an "O", it will
