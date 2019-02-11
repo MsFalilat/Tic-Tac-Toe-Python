@@ -17,7 +17,7 @@ def replay():
     while True:
         if (replay.upper() == "Y" or replay.upper() == "N" or replay.upper() == "YES" or replay.upper() == "NO"):
             if (replay.upper() == "Y" or replay.upper() == "YES"):
-                print('\n'*10)
+                print('**'*20)
                 ticTacToe()
                 replay = ''
                 continue
